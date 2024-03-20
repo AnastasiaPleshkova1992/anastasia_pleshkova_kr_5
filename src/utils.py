@@ -110,13 +110,3 @@ def save_data_to_database(data, database_name, params):
 
     conn.commit()
     conn.close()
-
-
-def add_vacancy(vacancies):
-    """
-    Сохраняет вакансии в json файл
-    """
-    json_file = 'hh.json'
-    with open(json_file, 'w', encoding='utf-8') as file:
-        json.dump(vacancies, file, indent=4, ensure_ascii=False)
-
